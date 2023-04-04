@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+  pre_build:
+    commands:
+      - cd Space-app && npm install
+  build:
+    commands:
+      - cd Space-app && npm run build
+artifacts:
+  base-directory: Space-app/dist
+  files:
+    - '**/*'
+cache:
+  paths:
+    - 'Space-app/node_modules/**/*'
