@@ -1,6 +1,5 @@
 version: 1
 frontend:
-  appRoot: Space-app
   phases:
     preBuild:
       commands:
