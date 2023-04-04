@@ -9,7 +9,7 @@ const Home = () => {
   
     useEffect(() => {
       fetch(
-        'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY'
+        'https://api.nasa.gov/planetary/apod?api_key=5elH9YhT1oYHhPdBalrAJRtWPNgBCsOrucLoNTDh'
       )
         .then((response) => response.json())
         .then((data) => {
