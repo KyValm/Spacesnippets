@@ -1,17 +1,17 @@
 version: 1
 frontend:
-  basePath: /Space-app
+  appRoot: Space-app
   phases:
     preBuild:
       commands:
-        - npm install
+        - cd Space-app && npm install
     build:
       commands:
-        - npm run build
+        - cd Space-app && npm run build
   artifacts:
-    baseDirectory: dist
+    baseDirectory: Space-app/dist
     files:
       - '**/*'
   cache:
     paths:
-      - node_modules/**/*
+      - Space-app/node_modules/**/*
