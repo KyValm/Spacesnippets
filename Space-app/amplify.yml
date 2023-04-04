@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd Space-app
+        - cd Space-snippets/Space-app
         - npm ci
     build:
       commands:
