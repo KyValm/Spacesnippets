@@ -64,12 +64,12 @@ const Image = () => {
   const { title, date, url, explanation } = data;
 
   return (
-    <section className="flex flex-col items-center py-16 space-y-8 px-4">
+    <section id="image" className="flex flex-col items-center py-16 space-y-8 px-4 hover-up-down">
       <div className="bg-transparent rounded-xl p-4 max-w-3xl w-full">
         <h2 className="text-2xl font-bold">{title}</h2>
         <p className="text-sm">{date}</p>
       </div>
-      <div className="bg-transparent rounded-xl p-4 max-w-3xl w-full">
+      <div className="bg-transparent rounded-xl p-4 max-w-3xl w-full hover-up-down">
         {data.media_type === "image" ? (
           <img src={url} alt={title} className="w-full h-auto rounded-xl" />
         ) : (
@@ -84,26 +84,27 @@ const Image = () => {
           ></iframe>
         )}
       </div>
-      <div className="flex space-x-4">
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded md:text-base text-sm"
-          onClick={handleRandomImage}
-        >
-          Random
-        </button>
-        <input
-          type="date"
-          className="border bg-blue-500 border-gray-300 p-2 rounded cursor-text md:text-base text-sm"
-          value={inputDate}
-          onChange={(e) => setInputDate(e.target.value)}
-        />
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded md:text-base text-sm"
-          onClick={handleDateImage}
-        >
-          Search
-        </button>
-      </div>
+      <div className="flex flex-col md:grid md:grid-cols-3 md:gap-4 items-center space-y-4 md:space-y-0">
+  <button
+    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    onClick={handleRandomImage}
+  >
+    Random
+  </button>
+  <input
+    type="date"
+    className=" bg-blue-500 p-2 rounded cursor-text"
+    value={inputDate}
+    onChange={(e) => setInputDate(e.target.value)}
+  />
+  <button
+    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    onClick={handleDateImage}
+  >
+    Search
+  </button>
+</div>
+
       <div className="bg-transparent rounded-xl p-4 max-w-3xl w-full">
         <p className="text-sm">{explanation}</p>
       </div>

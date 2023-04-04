@@ -35,7 +35,7 @@ const Home = () => {
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
 
               <a
-                href="#explore-section"
+                href="#image"
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center hover-up-down"
               >
                 Begin journey

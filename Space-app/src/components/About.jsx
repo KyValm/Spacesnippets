@@ -12,7 +12,7 @@ const About = () => {
               className="w-48 h-48 object-cover rounded-full border-4 border-white"
             />
             <a
-              href="https://www.linkedin.com/in/your-linkedin-profile"
+              href="https://www.linkedin.com/in/kyvalm/"
               target="_blank"
               rel="noreferrer"
               className="absolute -bottom-3 right-3"
