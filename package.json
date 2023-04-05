@@ -12,9 +12,12 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "animate.css": "^4.1.1",
+    "emailjs": "^4.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-scroll": "^1.8.9",
     "react-tsparticles": "^2.9.3"
   },

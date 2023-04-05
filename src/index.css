@@ -45,6 +45,14 @@ body {
   z-index: -1;
 }
 
+.light .starry-night {
+  background: #000;
+}
+
+.dark .starry-night {
+  background: #1a202c;
+}
+
 .star {
   background: white;
   border-radius: 50%;
@@ -52,6 +60,7 @@ body {
   animation-name: twinkle;
   animation-iteration-count: infinite;
 }
+
 
 @keyframes hoverUpDown {
   0% {

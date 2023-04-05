@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './style'
-import { Navbar, Home, Wrapper, Image, Footer } from './components'
+import { Navbar, Home, Wrapper, Image, Footer, Contact, Donate } from './components'
 import About from './components/About'
 
 function App() {
@@ -25,6 +25,16 @@ function App() {
         <div className={` ${styles.flexStart} pt-20`}>
           <div className={`${styles.boxWidth}`}>
             <About />
+          </div>
+        </div>
+        <div className={` ${styles.flexStart} pt-20`}>
+          <div className={`${styles.boxWidth}`}>
+            <Contact/>
+          </div>
+        </div>
+        <div className={` ${styles.flexStart} pt-20`}>
+          <div className={`${styles.boxWidth}`}>
+            <Donate/>
           </div>
         </div>
       <Footer/>

@@ -4,6 +4,8 @@ import StarryNight from "./StarryNight";
 import Image from './Image'
 import Wrapper from "./Wrapper";
 import Footer from "./Footer";
+import Contact from "./Contact";
+import Donate from "./Donate";
 
 export {
     Navbar,
@@ -11,5 +13,7 @@ export {
     StarryNight,
     Image,
     Wrapper,
-    Footer
+    Footer,
+    Contact,
+    Donate
 };

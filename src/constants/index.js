@@ -11,4 +11,8 @@ export const navLinks = [
       id: "contact",
       title: "Contact",
     },
+    {
+      id: "donate",
+      title: "Donate",
+    },
   ];

@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
         <ul className="hidden sm:flex items-center space-x-10">
           {navLinks.map((nav) => (
-            <li key={nav.id} className="font-poppins font-normal cursor-pointer text-[30px] text-white">
+            <li key={nav.id} className="font-poppins font-normal cursor-pointer md:text-[30px] text-[20px] text-white">
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
@@ -54,7 +54,7 @@ const Navbar = () => {
         </div>
       </div>
       {toggle && (
-        <div className="absolute top-full right-2 bg-black-gradient px-4 py-6 rounded-xl space-y-4 sm:hidden">
+        <div className="absolute top-full right-2 bg-navcolor px-4 py-6 rounded-xl space-y-4 sm:hidden">
           <ul className="flex flex-col items-center space-y-4">
             {navLinks.map((nav) => (
               <li key={nav.id} className="font-poppins font-normal cursor-pointer text-[16px] text-white">
