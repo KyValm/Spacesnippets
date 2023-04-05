@@ -23,7 +23,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="flex flex-col items-center py-16 space-y-8 hover-up-down">
-      <h2 className="text-2xl font-bold">Contact Me</h2>
+      <h2 className="text-2xl font-bold">Comments or concerns?</h2>
       <form className="w-full max-w-md" onSubmit={sendEmail}>
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-5 mb-6 md:mb-0">
