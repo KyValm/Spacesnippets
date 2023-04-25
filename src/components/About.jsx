@@ -29,7 +29,7 @@ const About = () => {
             Welcome to my <span className="font-bold color-blue text-blue-400">website</span>! I have fell in love with the universe and strive to make learning actually<span className="font-bold text-blue-400"> fun. </span> I want to inspire
             others to learn more about our <span className="font-bold text-blue-400">universe</span>, and to create a better future for the next generations. The site features a
             daily image from NASA, as well as an archive of stunning images and
-            information from the past. Connect with me via the linkedin link. I hope you enjoy exploring and discovering
+            information from the past.<span className="font-bold text-blue-400">Connect with me</span>via the linkedin link. I hope you enjoy exploring and discovering
             the beauty of space!
           </p>
         </section>
