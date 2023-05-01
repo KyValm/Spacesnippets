@@ -2,4 +2,4 @@
 Credit to icons8.com for the icons used
 NASA apod api to get all the pictures
 
-SpaceSnippets.com https://www.kyvalm.com/
+SpaceSnippets.com https://www.spacesnippets.com/
