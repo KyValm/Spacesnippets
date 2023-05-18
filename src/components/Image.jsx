@@ -7,9 +7,10 @@ const Image = () => {
   const [loading, setLoading] = useState(false);
 
   const apiKeys = [
-    "5elH9YhT1oYHhPdBalrAJRtWPNgBCsOrucLoNTDh",
-    "EYb8Lc8jKiMGGc9edAQlfvRPcffbXAOXFCsKrQqv",
+    process.env.REACT_APP_API_KEY1,
+    process.env.REACT_APP_API_KEY2,
   ];
+  
 
   const Spinner = () => (
     <div className="w-8 h-8 border-t-2 border-blue-500 border-solid rounded-full animate-spin">
