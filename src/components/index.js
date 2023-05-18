@@ -6,6 +6,7 @@ import Wrapper from "./Wrapper";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import Donate from "./Donate";
+import About from "./About";
 
 export {
     Navbar,
@@ -15,5 +16,6 @@ export {
     Wrapper,
     Footer,
     Contact,
-    Donate
+    Donate,
+    About,
 };

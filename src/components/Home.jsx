@@ -19,7 +19,6 @@ const Home = () => {
   
     return (
         <section
-          id="home"
           className={`relative flex md:flex-row flex-col ${styles.paddingY} pt-16 items-center justify-center bg-cover bg-no-repeat bg-center`}
           style={{
             backgroundImage: apodData ? `url(${apodData.url})` : '',

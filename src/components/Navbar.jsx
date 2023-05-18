@@ -2,11 +2,11 @@ import earthImg from '../assets/earth.png'
 import React, {useEffect} from 'react';
 import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
-import { Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import { navLinks } from '../constants';
 import { useState } from 'react';
-
+import { Slant as Hamburger } from 'hamburger-react';
 const Navbar = () => {
+    const [isOpen, setOpen] = useState(false);
     const [toggle, setToggle] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -25,7 +25,7 @@ const Navbar = () => {
       }, [scrolled]);
   return (
     <nav
-      className={`w-full fixed top-0 left-0 z-50 py-2 transition-all duration-300 ease-in-out ${
+      className={`w-full fixed top-0 left-0 z-50 py- transition-all duration-300 ease-in-out ${
         scrolled ? 'bg-navcolor' : 'bg-transparent'
       }`}
     >
@@ -40,30 +40,35 @@ const Navbar = () => {
         <ul className="hidden sm:flex items-center space-x-10">
           {navLinks.map((nav) => (
             <li key={nav.id} className="font-poppins font-normal cursor-pointer md:text-[30px] text-[20px] text-white">
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={nav.path}>{nav.title}</a>
             </li>
           ))}
         </ul>
         <div className="sm:hidden flex items-center">
-          <img
+          {/* <img
             src={toggle ? close : menu}
             alt="menu"
             className="w-[20px] h-[20px] xs:w-[30px] xs:h-[30px] object-contain"
             onClick={() => setToggle((prev) => !prev)}
+          /> */}
+          <Hamburger
+            toggled={toggle}
+            toggle={setToggle}
           />
         </div>
       </div>
       {toggle && (
-        <div className="absolute top-full right-2 bg-navcolor px-4 py-6 rounded-xl space-y-4 sm:hidden">
-          <ul className="flex flex-col items-center space-y-4">
-            {navLinks.map((nav) => (
-              <li key={nav.id} className="font-poppins font-normal cursor-pointer text-[16px] text-white">
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+  <div className={`fixed top-25 h-full w-64 bg-navcolor px-4 py-6 space-y-4 transform transition-transform duration-500 ease-in-out ${toggle ? 'translate-x-0' : 'translate-x-full'}`}>
+    <ul className="flex flex-col items-center space-y-4">
+      {navLinks.map((nav) => (
+        <li key={nav.id} className="font-poppins font-normal cursor-pointer text-[16px] text-white">
+          <a href={nav.path}>{nav.title}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
     </nav>
   );
 };

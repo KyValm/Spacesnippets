@@ -4,7 +4,7 @@ import linkedinIcon from '../assets/linkedin.svg';
 
 const About = () => {
     return (
-        <section id="about" className="flex flex-col items-center py-16 space-y-8 px-4 md:px-0">
+        <section className="flex flex-col items-center py-16 space-y-8 px-4 md:px-0">
           <div className="relative">
             <img
               src={myPhoto}

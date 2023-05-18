@@ -12,6 +12,14 @@ export const theme = {
     fontFamily: {
       orbitron: ["Orbitron", "sans-serif"],
     },
+    transitionProperty: {
+      'transform': 'transform',
+    },
+    transitionDuration: {
+      '200': '200ms',
+      '500': '500ms',
+      '1000': '1000ms',
+    },
   },
   screens: {
     xs: "480px",

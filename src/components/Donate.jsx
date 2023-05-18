@@ -9,7 +9,7 @@ const Donate = () => {
   };
 
   return (
-    <section id="donate"  className="flex flex-col items-center py-16 space-y-8 px-4">
+    <section className="flex flex-col items-center py-16 space-y-8 px-4">
       <h2 className="text-3xl font-bold">Donate</h2>
       <p className="text-center text-lg max-w-lg">
         Thank you for your support. Your donation will help to continue creating amazing content and inspiring more people to learn about our universe.

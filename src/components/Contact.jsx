@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs  from "@emailjs/browser";
+import Donate from'./Donate';
 
 const Contact = () => {
   const [emailStatus, setEmailStatus] = useState('');
@@ -22,7 +23,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="flex flex-col items-center py-16 space-y-8 hover-up-down">
+    <section className="flex flex-col items-center py-16 space-y-8 hover-up-down">
       <h2 className="text-2xl font-bold">Comments or concerns?</h2>
       <form className="w-full max-w-md" onSubmit={sendEmail}>
         <div className="flex flex-wrap -mx-3 mb-6">
@@ -69,6 +70,7 @@ const Contact = () => {
         </div>
         {emailStatus && <p className="email-status text-center mt-4">{emailStatus}</p>}
       </form>
+      <Donate/>
     </section>
   );
 };
