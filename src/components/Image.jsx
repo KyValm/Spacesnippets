@@ -11,7 +11,7 @@ const Image = () => {
     import.meta.env.VITE_API_KEY_2,
 ];
 
-//IMAGES 
+//IMAGES ss
 
   const Spinner = () => (
     <div className="w-8 h-8 border-t-2 border-blue-500 border-solid rounded-full animate-spin">
