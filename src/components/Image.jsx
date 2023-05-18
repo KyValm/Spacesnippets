@@ -7,9 +7,10 @@ const Image = () => {
   const [loading, setLoading] = useState(false);
 
   const apiKeys = [
-    process.env.REACT_APP_API_KEY1,
-    process.env.REACT_APP_API_KEY2,
-  ];
+    import.meta.env.VITE_API_KEY_1,
+    import.meta.env.VITE_API_KEY_2,
+];
+
   
 
   const Spinner = () => (
