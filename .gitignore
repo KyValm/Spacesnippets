@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 Image.jsx
-
+src\components\Image.jsx
 
 # Editor directories and files
 .vscode/*
